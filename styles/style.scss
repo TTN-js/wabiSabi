@@ -127,3 +127,455 @@ body {
 /**
  * App code
  */
+
+*{
+    box-sizing: border-box;
+}
+
+ body{
+    background-color:#4A5F70;
+ }
+
+/* Log In View  */
+
+.container{
+    height:100vh;
+    padding:15px;
+    padding-top:7px;
+}
+
+.logInContainer{
+    float:right;
+    width:200px;
+    margin-top:100px;
+    margin-right:200px;
+    display:inline-block;
+}
+
+.signUpContainer{
+    float:left;
+    width:200px;
+    margin-top:100px;
+    margin-left:200px;
+    display:inline-block;
+}
+
+#logoDiv{
+    margin:auto;
+    margin-top:200px;
+    text-align:center;
+}
+.wabiLogo{
+    color:#33C5F3;
+    display:inline-block;
+    margin-left:-13px;  
+    margin-bottom:10px;  
+}
+
+.sabiLogo{
+    color:#4A5F70;
+    display:inline-block;  
+    margin-left:4px; 
+    margin-bottom:10px; 
+}
+
+
+#wabisabiInfo{
+    margin-left:622px;
+}
+
+.button{
+    background-color:#4A5F70;
+    color:#33C5F3;
+    border:#33C5F3 solid 3px;
+    border-radius:5px;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+.logInbutton{
+    background-color:#33C5F3;
+    color:#4A5F70;
+    border:#4A5F70 solid 3px;
+    border-radius:5px;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+.button:hover{
+    background-color:#33C5F3;
+    color:#4A5F70;
+}
+
+.logInbutton:hover{
+    background-color:#4A5F70;
+    color:#33C5F3;
+}
+
+input{
+    margin:auto;
+    width: 100%;
+    background-color:#4A5F70;
+    border:none;
+    color:#BECAD4;
+}
+
+#logInEmail{
+    background-color:#33C5F3;
+}
+
+#logInPassword{
+    background-color:#33C5F3;
+}
+
+input:focus{
+    outline:none;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BECAD4;
+  font-weight:bold;
+  
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #BECAD4;
+  font-weight:bold;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #BECAD4;
+  font-weight:bold;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #BECAD4;
+  font-weight:bold;
+
+}
+
+#halfColor{
+    background-color:#33C5F3;
+    height:100vh;
+    width:50%;
+    z-index:-5;
+    position:fixed;
+    right:0;
+    top:0;
+}
+
+/* Closet View */
+
+#logout, #silkroad{
+    margin:10px;
+    float:right;
+    margin-top:0px;
+}
+
+a{
+    color: #33C5F3;
+    text-decoration: none;
+}
+
+.logo{
+    margin:auto;
+    float:right;
+    color:#33C5F3;
+}
+
+#closetSpace{
+    border:3px solid #33C5F3;
+    margin-top: 31px;
+    width:69%;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:left;
+    margin-right:5px;
+    padding:20px;
+    padding-top:7px;
+    padding-left:28px;
+    border-radius:5px;
+}
+
+#garmentSpace{
+    border:3px solid #33C5F3;
+    margin-top: 58px;
+    width:565px;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:left;
+    margin-right:5px;
+    padding:20px;
+    padding-top:7px;
+    padding-left:28px;
+    border-radius:5px;
+}
+
+#currentGarment{
+    border:3px solid #33C5F3;
+    border-radius:5px;
+    color:#BECAD4;
+    margin-top:15px;
+    padding:15px;
+    font-weight:bold;
+    font-size:20px;
+    overflow:scroll;
+}
+
+#silkLogout, #closet, #silkroadDescript{
+    margin:10px;
+    float:right;
+    margin-bottom:2px;
+    margin-top:27px; 
+}
+
+#silkroadGV, #logoutGV, #closetGV{
+    margin-top:27px;
+    margin-right:10px;
+    float:right;
+    margin-bottom:2px;
+}
+
+#silkSpace{
+    border:3px solid #33C5F3;
+    margin-top: 0px;
+    width:100%;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:left;
+    margin-right:5px;
+    padding:20px;
+    padding-top:7px;
+    padding-left:28px;
+    border-radius:5px;
+}
+
+.garmentPost{
+    width:31.5%;
+    min-width:250px;
+    height:300px;
+    display:inline-block;
+    margin:7px;
+    padding:9px;
+    vertical-align:top;
+    border:2px solid #33C5F3;
+    overflow:scroll;
+    color:#BECAD4;
+    border-radius:5px;
+    position:relative;
+
+}
+
+.silkRoadGarmentPost{
+    width:300px;
+    height:300px;
+    display:inline-block;
+    margin:15px;
+    padding:9px;
+    vertical-align:top;
+    border:2px solid #33C5F3;
+    overflow:scroll;
+    color:#BECAD4;
+    border-radius:5px;
+    position:relative;
+}
+
+
+#requestorPost{
+    border:3px solid #33C5F3;
+    border-radius:5px;
+    margin:10px;
+    color:#BECAD4;
+    font-size:18px;
+    font-weight:bold;
+    padding:5px;
+    text-align:center;
+}
+
+.RequesterClosetPost{
+    width:96%;
+    height:300px;
+    display:block;
+    margin:10px;
+    padding:10px;
+    vertical-align:top;
+    border:2px solid #33C5F3;
+    overflow:scroll;
+    color:#BECAD4;
+    font-weight:bold;
+    border-radius:5px;
+    position:relative;
+}
+
+#closetPic{
+    display:block;
+    margin: 0 auto;
+
+}
+
+#addSwaps{
+    border:3px solid #33C5F3;
+    margin-top: 0px;
+    width:30%;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:right;
+    padding:7px;
+    border-radius:5px; 
+}
+
+#swapRequestors{
+    border:3px solid #33C5F3;
+    margin-top: 58px;
+    margin-left:11px;
+    width:315px;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:left;
+    padding:7px;
+    border-radius:5px;
+
+}
+
+#requestorsCloset{
+    border:3px solid #33C5F3;
+    margin-top: 0px;
+    width:500px;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:right;
+    padding:7px;
+    border-radius:5px;      
+}
+
+#pendingSwaps{
+    border:3px solid #33C5F3;
+    margin-top: -8px;
+    width:30%;
+    height:750px;
+    overflow:scroll;
+    display:inline-block;
+    float:right;
+    padding:7px;
+    border-radius:5px;
+
+}
+
+.crazySlidBar{
+    display:inline-block;
+}
+
+.toggle{
+    color:#33C5F3;
+    font-size:39px;
+    display:inline-block;
+    margin:auto;
+    margin-top:-5px;
+    position:absolute;
+    z-index:-1;
+}
+
+input[type="checkbox"]{
+  width: 50px; 
+  height: 50px; 
+  z-index:10;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .slideBar {
+    transform:translateX(0);
+
+}
+
+/* components */
+.slideBar{
+    border:3px solid #33C5F3;
+    border-radius:5px;
+    padding:15px;
+    display:inline-block;
+    width:65%;
+    background-color:#4A5F70;
+    position:fixed;
+    top:123px;
+    left:0px;
+    height:750px;
+    text-align:center;
+    transform:translateX(-100%);
+    transition:transform 0.6s ease;
+    z-index:2;
+
+}
+
+h5, {
+    color:#BECAD4;
+    margin-bottom:0px;
+}
+
+h3{
+    color:#BECAD4;
+    margin-bottom:7px;
+}
+
+#h3Requester{
+    color:#BECAD4;
+    margin-bottom:14px;  
+}
+
+hr{
+    border-color: #BECAD4;
+}
+
+button:focus {
+    outline:0;
+}
+
+.barButton {
+    width:100px;
+    margin:5px;
+    margin-top:0px;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:5px;
+    background-color:#33C5F3; 
+    color:#BECAD4;
+    border:none;
+    
+}
+
+.functionButtons{
+    opacity:0.5;
+    z-index:1;
+    position: fixed;
+    display:inline-block;
+    border-radius:5px;
+    color:#33C5F3;
+    font-weight:bold;
+    background-color:#4A5F70;
+    border:2px solid #33C5F3;
+    position:absolute;
+    top:25;
+    left:25;
+}
+
+.functionButtons:hover{
+    opacity:1;
+}
+
+#picUploader{
+    margin-bottom:7px;
+    width: 207px;}
+
+#description{
+    margin-top:3px;
+    max-width:50%;
+    min-width:50%;
+    max-height:192px;
+    min-height:192px;
+}
+
+
